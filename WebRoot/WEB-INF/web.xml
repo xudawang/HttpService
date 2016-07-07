@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name></display-name>
+	<servlet>
+		<servlet-name>HttpServiceSelectByName</servlet-name>
+		<servlet-class>com.patientinfo.server.HttpServiceSelectByName</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServiceSelectByName</servlet-name>
+		<url-pattern>/servlet/HttpServiceSelectByName</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpServiceSelectById</servlet-name>
+		<servlet-class>com.patientinfo.server.HttpServiceSelectById</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServiceSelectById</servlet-name>
+		<url-pattern>/servlet/HttpServiceSelectById</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpServiceSelectALL</servlet-name>
+		<servlet-class>com.patientinfo.server.HttpServiceSelectALL</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServiceSelectALL</servlet-name>
+		<url-pattern>/servlet/HttpServiceSelectALL</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpServiceAdd</servlet-name>
+		<servlet-class>com.patientinfo.server.HttpServiceAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServiceAdd</servlet-name>
+		<url-pattern>/servlet/HttpServiceAdd</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpServerDelete</servlet-name>
+		<servlet-class>com.patientinfo.server.HttpServerDelete</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServerDelete</servlet-name>
+		<url-pattern>/servlet/HttpServerDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpServletUpdate</servlet-name>
+		<servlet-class>com.patientinfo.server.HttpServletUpdate</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpServletUpdate</servlet-name>
+		<url-pattern>/servlet/HttpServletUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>HttpGeTuiService</servlet-name>
+	    <servlet-class>com.patientinfo.server.HttpGeTuiService</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>HttpGeTuiService</servlet-name>
+	    <url-pattern>/servlet/HttpGeTuiService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpDNLoginServer</servlet-name>
+		<servlet-class>com.login.server.HttpDNLoginServer</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpDNLoginServer</servlet-name>
+		<url-pattern>/servlet/HttpDNLoginServer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>HttpDNRegisterServer</servlet-name>
+	    <servlet-class>com.login.server.HttpDNRegisterServer</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>HttpDNRegisterServer</servlet-name>
+	    <url-pattern>/servlet/HttpDNRegisterServer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpBrLoginServer</servlet-name>
+		<servlet-class>com.brLogin.server.HttpBrLoginServer</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpBrLoginServer</servlet-name>
+		<url-pattern>/servlet/HttpBrLoginServer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>com.http.test.HelloWorld</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>com.http.test.FirstServlet</servlet-class>
+		<!-- <init-param> <param-name>admin</param-name> <param-value>admin</param-value> 
+			</init-param> 指定servlet能够读取的param -->
+	</servlet>
+
+	<servlet>
+		<servlet-name>TestHttp</servlet-name>
+		<servlet-class>com.http.test.TestHttp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TestHttp</servlet-name>
+		<url-pattern>/servlet/TestHttp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TestHttpSave</servlet-name>
+		<servlet-class>com.http.test.TestHttpSave</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TestHttpSave</servlet-name>
+		<url-pattern>/servlet/TestHttpSave</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>ImageOutputAll</servlet-name>
+	    <servlet-class>com.image.output.server.ImageOutputAll</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>ImageOutputAll</servlet-name>
+	    <url-pattern>/servlet/ImageOutputAll</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/servlet/HelloWorld</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/servlet/FirstServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+
+	<!-- <context-param> </context-param> 所有servlet都能获取的参数 -->
+</web-app>
+
